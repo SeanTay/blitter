@@ -1,0 +1,12 @@
+<h2>This is a Bleet</h2>
+<p>{{BleetShowVM.bleet.content}}</p>
+<p>Likes: {{BleetShowVM.bleet.likes}}</p>
+<p>Created at: {{BleetShowVM.bleet.created_at}}</p>
+<p>Updated at: {{BleetShowVM.bleet.updated_at}}</p>
+
+<form>
+  <input value="BleetShowVM.bleet.content" data-ng-model="BleetShowVM.bleet.content" />
+  <button type="button" data-ng-click="BleetShowVM.update()">Update</button>
+  <button type="button"
+  data-ng-click="BleetShowVM.destroy()">Delete</button>
+</form>

@@ -1,0 +1,10 @@
+<h2>These are all the Bleets</h2>
+
+<form>
+  <input placeholder="New Bleet" data-ng-model="BleetIndexVM.bleet.content" />
+  <button type="button" data-ng-click="BleetIndexVM.create()">Create</button>
+</form>
+
+<div data-ng-repeat = "bleet in BleetIndexVM.bleets | orderBy: '-created_at'">
+  <p><a data-ui-sref="bleetshow({id:bleet.id})">{{bleet.content}}</a></p>
+</div>
